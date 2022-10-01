@@ -1,10 +1,16 @@
 import './App.css';
 import Profile from './Profile/profile-component';
-function App() {
+import img from './img/img.jpg';
 
+function App() {
+function sayName(name) {
+  alert(name)
+}
   return (
    <div>
-    <Profile></Profile>
+    <Profile name="Mohammed" adresse="Anfa Casablanca Morocco" work="UX" sayName={sayName} >
+      {img}
+    </Profile>
 </div>
   );
 }
